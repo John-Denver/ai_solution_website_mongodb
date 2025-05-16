@@ -1,13 +1,19 @@
 <?php
 $host = 'localhost';
-$db = 'ai_solution';
-$user = 'your_postgres_username';
-$pass = 'your_postgres_password';
+$db   = 'ai_solution'; 
+$user = 'root';     
+$pass = '';       
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+];
 
 try {
-    $pdo = new PDO("pgsql:host=$host;dbname=$db", $user, $pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Database connection failed: " . $e->getMessage());
+    $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 ?>

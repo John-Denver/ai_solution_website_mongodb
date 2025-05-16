@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: admin-login.html");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,11 +67,14 @@
                         <i class="bi bi-person-circle me-2"></i>
                         <strong id="adminUsername">Admin</strong>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#" id="logoutBtn">Sign out</a></li>
-                    </ul>
+                    <li>
+                        <form action="backend/logout.php" method="POST" style="margin: 0;">
+                            <button type="submit" class="dropdown-item bg-transparent border-0 w-100 text-start">
+                                Sign out
+                            </button>
+                        </form>
+                    </li>
+
                 </div>
             </div>
         </div>
