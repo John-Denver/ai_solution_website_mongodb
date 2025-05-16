@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - AI-Solution</title>
+    <title>AI-Solution - Innovative Software Solutions</title>
+    <meta name="description" content="AI-Solution provides cutting-edge software solutions for your business needs.">
     
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,11 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     
     <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
-
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -53,74 +56,73 @@
         </div>
     </nav>
 
-    <!-- Contact Form Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-center mb-5">Contact Us</h2>
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="name" class="form-label">Full Name*</label>
-                                <input type="text" class="form-control" id="name" required>
-                                <div class="invalid-feedback">
-                                    Please provide your name.
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" id="email" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid email.
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="company" class="form-label">Company Name*</label>
-                                <input type="text" class="form-control" id="company" required>
-                                <div class="invalid-feedback">
-                                    Please provide your company name.
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="country" class="form-label">Country</label>
-                                <select class="form-select" id="country">
-                                    <option value="">Select Country</option>
-                                    <option value="US">United States</option>
-                                    <option value="UK">United Kingdom</option>
-                                    <option value="CA">Canada</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="jobTitle" class="form-label">Job Title</label>
-                                <input type="text" class="form-control" id="jobTitle">
-                            </div>
-                            <div class="col-12">
-                                <label for="jobDescription" class="form-label">Job Description</label>
-                                <textarea class="form-control" id="jobDescription" rows="2"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <label for="message" class="form-label">Your Message*</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                                <div class="invalid-feedback">
-                                    Please provide your message.
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <button class="btn btn-primary btn-lg px-4" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Innovative Software Solutions</h1>
+                    <p class="lead mb-4">Transforming your business with cutting-edge AI and software technologies</p>
+                    <div class="d-flex gap-3">
+                        <a href="contact.html" class="btn btn-light btn-lg px-4">Get Started</a>
+                        <a href="services.html" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Expertise</h2>
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-cpu text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">AI Solutions</h3>
+                            <p class="text-muted">Custom AI implementations to automate and optimize your business processes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-gear text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Custom Software</h3>
+                            <p class="text-muted">Tailored software solutions designed specifically for your business needs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-cloud text-primary fs-1 mb-3"></i>
+                            <h3 class="h4 mb-3">Cloud Services</h3>
+                            <p class="text-muted">Scalable cloud solutions to grow with your business and reduce infrastructure costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CTA Section -->
+    <section class="bg-dark text-white py-5">
+        <div class="container text-center py-4">
+            <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Business?</h2>
+            <p class="lead mb-4">Let's discuss how AI-Solution can help you achieve your goals.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg px-4">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-light py-5">
         <div class="container">
             <div class="row g-4">
