@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
         message: document.getElementById('message').value
     };
 
-    fetch('http://localhost:5000/api/inquiries', {
+    // To this (use your Render backend URL):
+    fetch('https://ai-solution-website-backend.onrender.com/api/inquiries', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
